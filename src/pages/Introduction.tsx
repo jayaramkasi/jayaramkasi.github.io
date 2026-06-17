@@ -5,10 +5,34 @@ function Introduction() {
   return (
     <div className="space-y-9">
       <header>
-        <h1 className="mt-2 hidden font-display text-5xl font-medium tracking-tight text-night-950 dark:text-cream sm:text-6xl lg:block">
-          {profile.name}
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg leading-8 text-night-900/80 dark:text-moonlight/80">
+        <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center">
+          <div className="relative shrink-0">
+            <span
+              aria-hidden
+              className="absolute -inset-1 rounded-full bg-gradient-to-br from-gold-300/50 to-gold-600/30 blur-md dark:from-gold-300/30 dark:to-gold-600/20"
+            />
+            {/* Two theme-matched portraits: the light shot (sky backdrop) shows in
+                light mode, the dark shot (black backdrop) shows in dark mode. */}
+            <img
+              src="/profile-light.png"
+              alt={profile.name}
+              width={512}
+              height={512}
+              className="relative h-32 w-32 rounded-full object-cover ring-1 ring-night-900/10 dark:hidden sm:h-36 sm:w-36"
+            />
+            <img
+              src="/profile-dark.png"
+              alt={profile.name}
+              width={512}
+              height={512}
+              className="relative hidden h-32 w-32 rounded-full object-cover ring-1 ring-moonlight/15 dark:block sm:h-36 sm:w-36"
+            />
+          </div>
+          <h1 className="hidden text-center font-display text-5xl font-medium tracking-tight text-night-950 dark:text-cream sm:text-left sm:text-6xl lg:block">
+            {profile.name}
+          </h1>
+        </div>
+        <p className="mt-6 max-w-2xl text-lg leading-8 text-night-900/80 dark:text-moonlight/80">
           {profile.tagline}
         </p>
         <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
