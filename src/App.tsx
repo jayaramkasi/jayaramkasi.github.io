@@ -6,6 +6,7 @@ import Expertise from "~/pages/Expertise";
 import Education from "~/pages/Education";
 import FeaturedWork from "~/pages/FeaturedWork";
 import Community from "~/pages/Community";
+import NotFound from "~/pages/NotFound";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="education" element={<Education />} />
         <Route path="featured-work" element={<FeaturedWork />} />
         <Route path="community" element={<Community />} />
+        <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
   );
