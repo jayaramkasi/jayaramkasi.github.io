@@ -3,15 +3,15 @@ import { FiLinkedin, FiGithub, FiMail, FiMapPin } from "react-icons/fi";
 
 function Introduction() {
   return (
-    <div className="space-y-20">
+    <div className="space-y-9">
       <header>
-        <h1 className="mt-4 font-display text-5xl font-medium tracking-tight text-night-950 dark:text-cream sm:text-6xl">
+        <h1 className="mt-2 font-display text-5xl font-medium tracking-tight text-night-950 dark:text-cream sm:text-6xl">
           {profile.name}
         </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-night-900/80 dark:text-moonlight/80">
+        <p className="mt-4 max-w-2xl text-lg leading-8 text-night-900/80 dark:text-moonlight/80">
           {profile.tagline}
         </p>
-        <div className="mt-8 flex flex-wrap items-center gap-6">
+        <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3">
           <a
             href={profile.linkedIn}
             target="_blank"
@@ -42,8 +42,8 @@ function Introduction() {
         </div>
       </header>
 
-      <section className="border-t border-night-900/10 dark:border-night-600/40 pt-12">
-        <ul className="space-y-5">
+      <section className="border-t border-night-900/10 dark:border-night-600/40 pt-6">
+        <ul className="space-y-4">
           {highlights.map((highlight) => (
             <li key={highlight} className="flex gap-4">
               <span aria-hidden className="mt-2 text-gold-600 dark:text-gold-400">
@@ -55,7 +55,7 @@ function Introduction() {
         </ul>
       </section>
 
-      <section className="border-t border-night-900/10 dark:border-night-600/40 pt-12">
+      <section className="border-t border-night-900/10 dark:border-night-600/40 pt-6">
         <p className="text-sm uppercase tracking-[0.3em] text-gold-700 dark:text-gold-400/80">
           Expertise
         </p>
@@ -65,7 +65,7 @@ function Introduction() {
           delivery. I focus on systems that are observable, extensible, and
           aligned to business outcomes.
         </p>
-        <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
+        <div className="mt-6 grid gap-6 md:grid-cols-3 md:gap-6">
           {expertise.map((item) => (
             <div key={item.title}>
               <p className="text-sm uppercase tracking-[0.3em] text-night-900/50 dark:text-moonlight/50">
@@ -80,7 +80,7 @@ function Introduction() {
         </div>
       </section>
 
-      <section className="border-t border-night-900/10 dark:border-night-600/40 pt-12">
+      <section className="border-t border-night-900/10 dark:border-night-600/40 pt-6">
         <p className="text-sm uppercase tracking-[0.3em] text-gold-700 dark:text-gold-400/80">
           Let's connect
         </p>
@@ -94,7 +94,7 @@ function Introduction() {
         </p>
         <a
           href={`mailto:${profile.email}`}
-          className="mt-8 inline-flex rounded-full bg-gold-400 px-7 py-3.5 text-sm font-semibold text-night-950 transition hover:bg-gold-300"
+          className="mt-6 inline-flex rounded-full bg-gold-400 px-7 py-3 text-sm font-semibold text-night-950 transition hover:bg-gold-300"
         >
           Email me
         </a>

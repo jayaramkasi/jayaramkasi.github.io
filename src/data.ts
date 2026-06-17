@@ -117,22 +117,14 @@ export const projects = [
     category: "Engineering",
     description:
       "Built and scaled 20+ data and software systems for clients across domains, including sports, mortgage services, e-commerce, insurance and more.",
-    tags: [
-      "Python",
-      "GoLang",
-      "AWS",
-      "GCP",
-      "Javascript",
-      "ReactJS",
-      "BigQuery",
-    ],
+    tags: ["Python", "GoLang", "AWS", "GCP", "Javascript", "ReactJS"],
   },
   {
     title: "Data platforms and pipelines for internal use",
     category: "Data engineering",
     description:
       "Built data platforms and pipelines for internal use across multiple companies, enabling self-serve analytics and data-driven decision making.",
-    tags: ["Snowflake", "Airflow", "Python"],
+    tags: ["Snowflake", "Airflow", "Python", "BigQuery"],
   },
   {
     title: "Data analytics and dashboards for business teams",
@@ -152,6 +144,9 @@ export const experience = [
       "Leading data and AI strategy for a services company, leading multiple engagements.",
     achievements: [
       "Led a team of 15 - including engineering managers, data engineers and data scientists to enable data to be used for AI use cases like RAG for one of the world's largest sovereign wealth funds. ",
+      "Worked with the largest taxi provider in South-east asia to build multiple applications and AI use cases - marketing communications, internal HR",
+      "Led a team to build the world's first AI scouting platform for a client - Used by sports programmes in the top US universities and multiple Europe based football clubs",
+      "Led a team to deliver solutions to a UK based reverse mortgage funder - led a team to integrate with legacy third party software, and build cutting edge solutions on top of them",
     ],
   },
   {

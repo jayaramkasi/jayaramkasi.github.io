@@ -6,11 +6,11 @@ function Experience() {
       <p className="text-sm uppercase tracking-[0.3em] text-gold-700 dark:text-gold-400/80">
         Experience
       </p>
-      <h1 className="mt-6 font-display text-4xl font-medium text-night-950 dark:text-cream sm:text-5xl">
+      <h1 className="mt-3 font-display text-4xl font-medium text-night-950 dark:text-cream sm:text-5xl">
         16 years of growth
       </h1>
 
-      <ol className="mt-16 space-y-14 border-l border-night-900/10 dark:border-night-600/50 pl-8">
+      <ol className="mt-8 space-y-8 border-l border-night-900/10 dark:border-night-600/50 pl-8">
         {experience.map((job) => (
           <li key={`${job.company}-${job.period}`} className="relative">
             <span

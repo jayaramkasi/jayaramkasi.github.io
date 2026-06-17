@@ -7,15 +7,15 @@ function Expertise() {
       <p className="text-sm uppercase tracking-[0.3em] text-gold-700 dark:text-gold-400/80">
         Expertise
       </p>
-      <h1 className="mt-6 font-display text-4xl font-medium text-night-950 dark:text-cream sm:text-5xl">
+      <h1 className="mt-3 font-display text-4xl font-medium text-night-950 dark:text-cream sm:text-5xl">
         Skills & proficiency
       </h1>
-      <p className="mt-6 max-w-2xl leading-7 text-night-900/70 dark:text-moonlight/70">
+      <p className="mt-4 max-w-2xl leading-7 text-night-900/70 dark:text-moonlight/70">
         A self-assessment of the tools and disciplines I reach for most, rated
         out of ten.
       </p>
 
-      <div className="mt-12 grid gap-12 lg:grid-cols-2 lg:gap-8">
+      <div className="mt-6 grid gap-6 lg:grid-cols-2 lg:gap-6">
         {skillGroups.map((group, index) => (
           <section key={group.title}>
             <p className="text-sm uppercase tracking-[0.3em] text-night-900/50 dark:text-moonlight/50">
@@ -48,7 +48,7 @@ function Expertise() {
         ))}
       </div>
 
-      <section className="mt-20 border-t border-night-900/10 dark:border-night-600/40 pt-12">
+      <section className="mt-10 border-t border-night-900/10 dark:border-night-600/40 pt-6">
         <p className="text-sm uppercase tracking-[0.3em] text-gold-700 dark:text-gold-400/80">
           Tools & Frameworks
         </p>
@@ -60,7 +60,7 @@ function Expertise() {
           AI systems end to end.
         </p>
 
-        <div className="mt-12 grid gap-12 sm:grid-cols-2 lg:gap-8">
+        <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:gap-6">
           {toolGroups.map((group) => (
             <div key={group.title}>
               <p className="text-sm uppercase tracking-[0.3em] text-night-900/50 dark:text-moonlight/50">

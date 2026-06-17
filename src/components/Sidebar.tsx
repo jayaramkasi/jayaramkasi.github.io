@@ -14,13 +14,13 @@ const navItems = [
 function Sidebar() {
   return (
     <aside className="lg:fixed lg:inset-y-0 lg:left-0 lg:w-64 lg:overflow-y-auto">
-      <div className="flex h-full flex-col border-b border-night-900/10 px-6 py-8 dark:border-night-600/40 lg:border-b-0 lg:border-r lg:px-10 lg:py-20">
+      <div className="flex h-full flex-col border-b border-night-900/10 px-5 py-5 dark:border-night-600/40 lg:border-b-0 lg:border-r lg:px-8 lg:py-10">
         <div>
           <p className="mt-3 font-display text-xl text-night-950 dark:text-cream">
             Browse
           </p>
         </div>
-        <nav className="mt-8 flex flex-row flex-wrap gap-x-6 gap-y-3 lg:mt-14 lg:flex-col lg:gap-y-5">
+        <nav className="mt-5 flex flex-row flex-wrap gap-x-5 gap-y-2.5 lg:mt-8 lg:flex-col lg:gap-y-3">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
@@ -50,7 +50,7 @@ function Sidebar() {
             </NavLink>
           ))}
         </nav>
-        <div className="mt-8 lg:mt-auto">
+        <div className="mt-5 lg:mt-auto">
           <ThemeToggle />
         </div>
       </div>
