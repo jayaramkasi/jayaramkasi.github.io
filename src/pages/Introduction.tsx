@@ -6,7 +6,7 @@ function Introduction() {
     <div className="space-y-9">
       <header>
         <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center">
-          <div className="relative shrink-0">
+          <div className="relative hidden shrink-0 lg:block">
             <span
               aria-hidden
               className="absolute -inset-1 rounded-full bg-gradient-to-br from-gold-300/50 to-gold-600/30 blur-md dark:from-gold-300/30 dark:to-gold-600/20"
@@ -28,7 +28,7 @@ function Introduction() {
               className="relative hidden h-32 w-32 rounded-full object-cover ring-1 ring-moonlight/15 dark:block sm:h-36 sm:w-36"
             />
           </div>
-          <h1 className="hidden text-center font-display text-5xl font-medium tracking-tight text-night-950 dark:text-cream sm:text-left sm:text-6xl lg:block">
+          <h1 className="text-center font-display text-4xl font-medium tracking-tight text-night-950 dark:text-cream sm:text-left sm:text-6xl">
             {profile.name}
           </h1>
         </div>

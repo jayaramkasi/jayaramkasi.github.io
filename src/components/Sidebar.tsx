@@ -53,9 +53,21 @@ function Sidebar() {
     <>
       {/* Mobile top bar — hidden once the static sidebar takes over at lg. */}
       <header className="fixed inset-x-0 top-0 z-30 flex h-16 items-center justify-between border-b border-night-900/10 bg-cream/95 px-5 backdrop-blur dark:border-night-600/40 dark:bg-night-950/95 lg:hidden">
-        <span className="truncate font-display text-lg text-night-950 dark:text-cream">
-          {profile.name}
-        </span>
+        {/* Theme-matched portrait stands in for the name on the mobile top bar. */}
+        <img
+          src="/profile-light.png"
+          alt={profile.name}
+          width={512}
+          height={512}
+          className="h-10 w-10 rounded-full object-cover ring-1 ring-night-900/10 dark:hidden"
+        />
+        <img
+          src="/profile-dark.png"
+          alt={profile.name}
+          width={512}
+          height={512}
+          className="hidden h-10 w-10 rounded-full object-cover ring-1 ring-moonlight/15 dark:block"
+        />
         <button
           type="button"
           onClick={() => setOpen(true)}
