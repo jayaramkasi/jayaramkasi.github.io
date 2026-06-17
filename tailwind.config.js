@@ -1,5 +1,6 @@
 export default {
   content: ["./index.html", "./src/**/*.{ts,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -16,6 +17,7 @@ export default {
           400: "#f4d35e",
           500: "#e9b949",
           600: "#cf9b3a",
+          700: "#a87b2a",
         },
         cream: "#f7f3e8",
         moonlight: "#dce4f5",

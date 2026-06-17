@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: light;
+}
+
+
+:root.dark {
   color-scheme: dark;
 }
 
@@ -10,8 +15,29 @@ html {
   scroll-behavior: smooth;
 }
 
+/*
+ * Color transitions are enabled only while a theme switch is in flight. This
+ * keeps hover states snappy and avoids a transition flash on initial paint.
+ */
+.theme-transition,
+.theme-transition *,
+.theme-transition *::before,
+.theme-transition *::after {
+  transition: background-color 500ms ease, border-color 500ms ease,
+    color 500ms ease, fill 500ms ease, stroke 500ms ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-transition,
+  .theme-transition *,
+  .theme-transition *::before,
+  .theme-transition *::after {
+    transition: none !important;
+  }
+}
+
 body {
-  @apply bg-night-950 text-moonlight font-sans;
+  @apply bg-cream text-night-900 font-sans dark:bg-night-950 dark:text-moonlight;
 }
 
 * {
@@ -19,5 +45,5 @@ body {
 }
 
 ::selection {
-  @apply bg-gold-400/30 text-cream;
+  @apply bg-gold-400/40 text-night-950 dark:bg-gold-400/30 dark:text-cream;
 }

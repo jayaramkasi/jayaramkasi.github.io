@@ -5,6 +5,7 @@ export const profile = {
   location: "Remote / Bengaluru, India",
   email: "jayaramkasi@gmail.com",
   linkedIn: "https://linkedin.com/in/jayaramkasi",
+  github: "https://github.com/jayaramkasi",
 };
 
 export const highlights = [
@@ -223,6 +224,14 @@ export const community = [
     period: "2025",
     description:
       "Curated a track on data engineering and analytics for the Fifth Elephant conference, India's premier data and AI conference, including selecting speakers, defining topics, and moderating sessions.",
+  },
+  {
+    type: "Membership",
+    title: "Fellow, Startup Leadership Program",
+    venue: "Bangalore",
+    period: "2014-15",
+    description:
+      "Selected as a fellow for the Startup Leadership Program, a global network of entrepreneurs and startup leaders, providing mentorship, networking, and resources to help grow startups. ",
   },
 ];
 
