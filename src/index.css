@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-night-950 text-moonlight font-sans;
+}
+
+* {
+  @apply box-border;
+}
+
+::selection {
+  @apply bg-gold-400/30 text-cream;
+}
