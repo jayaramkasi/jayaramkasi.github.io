@@ -5,7 +5,7 @@ function Introduction() {
   return (
     <div className="space-y-9">
       <header>
-        <h1 className="mt-2 font-display text-5xl font-medium tracking-tight text-night-950 dark:text-cream sm:text-6xl">
+        <h1 className="mt-2 hidden font-display text-5xl font-medium tracking-tight text-night-950 dark:text-cream sm:text-6xl lg:block">
           {profile.name}
         </h1>
         <p className="mt-4 max-w-2xl text-lg leading-8 text-night-900/80 dark:text-moonlight/80">
