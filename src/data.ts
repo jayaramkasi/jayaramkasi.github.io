@@ -16,6 +16,11 @@ export const highlights = [
 
 export const expertise = [
   {
+    title: "Software & Systems",
+    description:
+      "API design, frontend engineering, observability, deployments  .",
+  },
+  {
     title: "Data Engineering",
     description:
       "ETL, data warehousing, pipeline design, and analytics architecture.",
@@ -24,11 +29,6 @@ export const expertise = [
     title: "Analytics & Insights",
     description:
       "Dashboards, metrics strategy, experimentation, and growth measurement.",
-  },
-  {
-    title: "Software & Systems",
-    description:
-      "API design, frontend engineering, observability, deployments  .",
   },
 ];
 
