@@ -12,3 +12,6 @@ dist
 !.yarn/sdks
 !.yarn/versions
 .pnp.*
+
+cv/cv.html
+cv/cv.pdf
