@@ -239,10 +239,18 @@ export const certifications = [
   {
     title: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
-    period: "2025",
+    period: "Jan-2025",
     badge: "/aws-cloud-practitioner.png",
     credentialUrl:
       "https://www.credly.com/badges/72337dea-fd13-4267-b888-f8d956edd79f",
+  },
+  {
+    title: "Databricks Fundamentals",
+    issuer: "Databricks",
+    period: "2025",
+    badge: "/databricks-fundamentals.png",
+    credentialUrl:
+      "https://credentials.databricks.com/20f5da65-130a-4b3f-bb1f-de3b27784a38#acc.vfXxVJRq",
   },
 ];
 
