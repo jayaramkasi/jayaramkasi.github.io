@@ -32,6 +32,23 @@ export default {
           "sans-serif",
         ],
       },
+      keyframes: {
+        "tab-enter": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(16px) scale(0.985)",
+            filter: "blur(8px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0) scale(1)",
+            filter: "blur(0)",
+          },
+        },
+      },
+      animation: {
+        "tab-enter": "tab-enter 480ms cubic-bezier(0.22, 1, 0.36, 1) both",
+      },
     },
   },
   plugins: [],
