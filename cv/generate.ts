@@ -81,8 +81,8 @@ const renderExpertise = (): string => `
         .map(
           (e) =>
             `<div class="expertise-item"><b>${esc(e.title)}</b><br/><span>${esc(
-              e.description.trim()
-            )}</span></div>`
+              e.description.trim(),
+            )}</span></div>`,
         )
         .join("\n      ")}
     </div>
@@ -97,13 +97,13 @@ const renderExperience = (): string => `
     <div class="job">
       <div class="job-head">
         <div><span class="job-role">${esc(job.role)}</span>, <span class="job-company">${esc(
-          job.company.trim()
+          job.company.trim(),
         )}</span></div>
         <div class="job-period">${esc(job.period)}</div>
       </div>
       ${job.summary?.trim() ? `<div class="job-summary">${esc(job.summary.trim())}</div>` : ""}
       ${bullets(job.achievements)}
-    </div>`
+    </div>`,
       )
       .join("")}
   </section>`;
@@ -120,7 +120,7 @@ const renderProjects = (): string => `
         <div class="proj-cat">${esc(p.category)}</div>
         <div class="proj-desc">${esc(p.description)}</div>
         ${chips(p.tags)}
-      </div>`
+      </div>`,
         )
         .join("")}
     </div>
@@ -134,10 +134,10 @@ const renderSkills = (): string => {
           .map(
             (s) =>
               `<div class="skill-row"><span class="skill-name">${esc(
-                s.name
+                s.name,
               )}</span><span class="bar"><span style="width:${pct(
-                s.level
-              )}%"></span></span></div>`
+                s.level,
+              )}%"></span></span></div>`,
           )
           .join("\n        ")}
       </div>`;
@@ -146,10 +146,10 @@ const renderSkills = (): string => {
     .map(
       (t) =>
         `<div><span class="grp-title" style="display:inline">${esc(
-          t.title
+          t.title,
         )}: </span><span style="color:var(--muted)">${esc(
-          t.items.join(", ")
-        )}</span></div>`
+          t.items.join(", "),
+        )}</span></div>`,
     )
     .join("\n      ");
 
@@ -174,14 +174,14 @@ const renderEducation = (): string => `
     <div class="entry">
       <div class="entry-head">
         <div class="entry-title">${esc(
-          e.institution.trim()
+          e.institution.trim(),
         )} <span style="font-weight:400;color:var(--muted)">— ${esc(
-          e.degree
+          e.degree,
         )}</span></div>
         <div class="entry-meta">${esc(e.period)}</div>
       </div>
       ${bullets(e.activities)}
-    </div>`
+    </div>`,
       )
       .join("")}
   </section>`;
@@ -195,20 +195,20 @@ const renderCertifications = (): string => `
     <div class="entry">
       <div class="entry-head">
         <div class="entry-title">${esc(c.title)} <span style="font-weight:400;color:var(--muted)">— ${esc(
-          c.issuer
+          c.issuer,
         )}</span></div>
         <div class="entry-meta">${esc(c.period)}</div>
       </div>
       ${
         "credentialUrl" in c && c.credentialUrl
           ? `<div class="entry-desc"><a href="${esc(
-              c.credentialUrl
+              c.credentialUrl,
             )}" style="color:var(--accent);text-decoration:none">${pretty(
-              c.credentialUrl
+              c.credentialUrl,
             )}</a></div>`
           : ""
       }
-    </div>`
+    </div>`,
       )
       .join("")}
   </section>`;
@@ -223,12 +223,12 @@ const renderCommunity = (): string => `
       <div class="entry">
         <div class="entry-type">${esc(c.type)}</div>
         <div class="entry-head"><div class="entry-title">${esc(
-          c.title
+          c.title,
         )}</div><div class="entry-meta">${esc(c.venue.trim())} · ${esc(
-          c.period
+          c.period,
         )}</div></div>
         <div class="entry-desc">${esc(c.description.trim())}</div>
-      </div>`
+      </div>`,
         )
         .join("")}
     </div>
