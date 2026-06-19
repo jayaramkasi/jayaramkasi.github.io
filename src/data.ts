@@ -92,6 +92,20 @@ export const toolGroups = [
 
 export const projects = [
   {
+    title: "AI Highlight Extractor for Match Footage",
+    category: "Agentic AI & Computer Vision",
+    description:
+      "Built an agentic pipeline that turns raw match footage into broadcast-ready highlight reels. A planner agent breaks each game into tasks, specialized agents handle event detection (goals, fouls, key passes), shot-boundary and audio-cue analysis, and a scoring agent ranks moments by excitement. Agents critique and refine each other's output in a feedback loop, with a human-in-the-loop checkpoint before the final cut is auto-assembled.",
+    tags: [
+      "Agentic AI",
+      "Computer Vision",
+      "LangChain",
+      "Python",
+      "FFmpeg",
+      "Vector search",
+    ],
+  },
+  {
     title: "AI Enabled Research Assistant",
     category: "Data engineering and AI Enablement",
     description:
