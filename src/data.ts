@@ -152,11 +152,14 @@ export const experience = [
   {
     company: "Hackle",
     role: "Cofounder and Head of Data & Engineering",
-    period: "2022 — 2024",
-    summary: "",
+    period: "2019 — 2024",
+    summary:
+      "Hackle is a FMCG and e-commerce fulfilment tech startup, working on last mile delivery.",
     achievements: [
+      "Built tech to support growth for FMCG and e-commerce distribution business to a peak scale of 54Cr ARR",
       "Led an engineering team of 10 to build the fulfilment deployment tech and customer portal.",
       "Integrated multiple client-facing Order management systems (OMS) and a third party transport management system (TMS) - through their APIs and event driven approaches",
+      "Enabled strategic analysis and decision making for the business through data platforms and dashboards - built with BigQuery and Apache Superset",
       "Exited to a strategic player in 2024",
     ],
   },
@@ -165,9 +168,11 @@ export const experience = [
     role: "Co-Founder and Head of Data and Engineering",
     period: "2014 — 2022",
     summary:
-      "Cofounded Pikkol, led all aspects of Product, data and engineering.",
+      "Pikkol is a relocation services startup, providing end to end services for individuals and corporates, powered by a technology platform.",
     achievements: [
       "The world's first AI-powered platform for relocations - with automated pricing, recommendations, tracking",
+      "200000+ moves completed across 20+ countries, with 100+ enterprise clients",
+      "Built multiple products for different parts of the user and operations journey - including tracking, reconciliation, pricing, analytics ",
       "Exited to a strategic acquirer in 2022",
     ],
   },
@@ -227,6 +232,17 @@ export const community = [
     period: "2014-15",
     description:
       "Selected as a fellow for the Startup Leadership Program, a global network of entrepreneurs and startup leaders, providing mentorship, networking, and resources to help grow startups. ",
+  },
+];
+
+export const certifications = [
+  {
+    title: "AWS Certified Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    period: "2025",
+    badge: "/aws-cloud-practitioner.png",
+    credentialUrl:
+      "https://www.credly.com/badges/72337dea-fd13-4267-b888-f8d956edd79f",
   },
 ];
 

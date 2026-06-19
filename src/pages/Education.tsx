@@ -1,4 +1,4 @@
-import { education } from "~/data";
+import { certifications, education } from "~/data";
 
 function Education() {
   return (
@@ -36,6 +36,51 @@ function Education() {
           </li>
         ))}
       </ol>
+
+      <p className="mt-16 text-sm uppercase tracking-[0.3em] text-gold-700 dark:text-gold-400/80">
+        Certifications
+      </p>
+      <ul className="mt-8 space-y-6">
+        {certifications.map((cert) => {
+          const content = (
+            <>
+              {cert.badge && (
+                <img
+                  src={cert.badge}
+                  alt={`${cert.title} badge`}
+                  className="h-20 w-20 shrink-0"
+                />
+              )}
+              <span>
+                <span className="block font-display text-2xl text-night-950 dark:text-cream">
+                  {cert.title}
+                </span>
+                <span className="mt-1 block text-night-900/70 dark:text-moonlight/70">
+                  {cert.issuer}
+                  {cert.period ? ` · ${cert.period}` : ""}
+                </span>
+              </span>
+            </>
+          );
+
+          return (
+            <li key={cert.title}>
+              {cert.credentialUrl ? (
+                <a
+                  href={cert.credentialUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center gap-5 transition-opacity hover:opacity-80"
+                >
+                  {content}
+                </a>
+              ) : (
+                <div className="flex items-center gap-5">{content}</div>
+              )}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

@@ -21,6 +21,7 @@ import {
   experience,
   community,
   education,
+  certifications,
 } from "../src/data.ts";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -185,6 +186,33 @@ const renderEducation = (): string => `
       .join("")}
   </section>`;
 
+const renderCertifications = (): string => `
+  <section class="avoid-break">
+    <h2>Certifications</h2>
+    ${certifications
+      .map(
+        (c) => `
+    <div class="entry">
+      <div class="entry-head">
+        <div class="entry-title">${esc(c.title)} <span style="font-weight:400;color:var(--muted)">— ${esc(
+          c.issuer
+        )}</span></div>
+        <div class="entry-meta">${esc(c.period)}</div>
+      </div>
+      ${
+        "credentialUrl" in c && c.credentialUrl
+          ? `<div class="entry-desc"><a href="${esc(
+              c.credentialUrl
+            )}" style="color:var(--accent);text-decoration:none">${pretty(
+              c.credentialUrl
+            )}</a></div>`
+          : ""
+      }
+    </div>`
+      )
+      .join("")}
+  </section>`;
+
 const renderCommunity = (): string => `
   <section class="avoid-break">
     <h2>Community &amp; Beyond</h2>
@@ -284,6 +312,7 @@ ${renderExperience()}
 ${renderProjects()}
 ${renderSkills()}
 ${renderEducation()}
+${renderCertifications()}
 ${renderCommunity()}
 </div>
 </body>
