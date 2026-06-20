@@ -13,7 +13,7 @@ export const highlights = [
   "16 years across data, analytics, cloud, and engineering — from individual contributor to leading teams of 15+",
   "Two-time startup co-founder with successful exits in 2022 and 2024",
   "Delivered data and AI systems for marquee clients — a sovereign wealth fund, Southeast Asia's largest taxi platform, and top US university sports programmes",
-  "Shipped 20+ data and software systems across sports, mortgage, e-commerce, insurance, and logistics",
+  "Shipped 20+ data and software systems across sports, mortgage, capital markets, banking and logistics",
 ];
 
 export const expertise = [
