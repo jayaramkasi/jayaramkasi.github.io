@@ -115,17 +115,31 @@ export const projects = [
     tags: ["LangChain", "Javascript", "Python", "GoLang"],
   },
   {
-    title: "Various engineering projects for clients across domains",
+    title: "AI Highlight Extractor for Match Footage",
+    category: "Agentic AI & Computer Vision",
+    description:
+      "Built an agentic pipeline that turns raw match footage into broadcast-ready highlight reels. A planner agent breaks each game into tasks, specialized agents handle event detection (goals, fouls, key passes), shot-boundary and audio-cue analysis, and a scoring agent ranks moments by excitement. Agents critique and refine each other's output in a feedback loop, with a human-in-the-loop checkpoint before the final cut is auto-assembled.",
+    tags: [
+      "Agentic AI",
+      "Computer Vision",
+      "LangChain",
+      "Python",
+      "FFmpeg",
+      "Vector search",
+    ],
+  },
+  {
+    title: "Software systems for clients across domains",
     category: "Engineering",
     description:
-      "Built and scaled 20+ data and software systems for clients across domains, including sports, mortgage services, e-commerce, insurance and more.",
+      "Designed, built, and scaled 20+ production systems for clients in sports, mortgage, e-commerce, insurance, and logistics — from greenfield builds to legacy integrations, owned end to end.",
     tags: ["Python", "GoLang", "AWS", "GCP", "Javascript", "ReactJS"],
   },
   {
-    title: "Data platforms and pipelines for internal use",
+    title: "Internal data platforms and pipelines",
     category: "Data engineering",
     description:
-      "Built data platforms and pipelines for internal use across multiple companies, enabling self-serve analytics and data-driven decision making.",
+      "Architected data platforms and ETL pipelines across multiple companies, turning fragmented sources into a single source of truth that powered self-serve analytics for hundreds of users.",
     tags: ["Snowflake", "Airflow", "Python", "BigQuery"],
   },
   {
