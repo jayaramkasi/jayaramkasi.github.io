@@ -62,6 +62,7 @@ const renderHeader = (): string => `
       <span>✉ <a href="mailto:${esc(profile.email)}">${esc(profile.email)}</a></span>
       <span>🔗 <a href="${esc(profile.linkedIn)}">${pretty(profile.linkedIn)}</a></span>
       <span>💻 <a href="${esc(profile.github)}">${pretty(profile.github)}</a></span>
+      <span>🌐 <a href="${esc(profile.site)}">${pretty(profile.site)}</a></span>
     </div>
   </header>`;
 
@@ -194,20 +195,15 @@ const renderCertifications = (): string => `
         (c) => `
     <div class="entry">
       <div class="entry-head">
-        <div class="entry-title">${esc(c.title)} <span style="font-weight:400;color:var(--muted)">— ${esc(
+        <div class="entry-title">${
+          "credentialUrl" in c && c.credentialUrl
+            ? `<a href="${esc(c.credentialUrl)}" style="color:inherit;text-decoration:none">${esc(c.title)}</a>`
+            : esc(c.title)
+        } <span style="font-weight:400;color:var(--muted)">— ${esc(
           c.issuer,
         )}</span></div>
         <div class="entry-meta">${esc(c.period)}</div>
       </div>
-      ${
-        "credentialUrl" in c && c.credentialUrl
-          ? `<div class="entry-desc"><a href="${esc(
-              c.credentialUrl,
-            )}" style="color:var(--accent);text-decoration:none">${pretty(
-              c.credentialUrl,
-            )}</a></div>`
-          : ""
-      }
     </div>`,
       )
       .join("")}
@@ -248,7 +244,7 @@ const STYLES = `
   .page { max-width: 182mm; margin: 0 auto; }
   header { border-bottom: 2px solid var(--accent); padding-bottom: 10px; margin-bottom: 14px; }
   h1 { font-size: 23px; letter-spacing: 0.2px; font-weight: 700; }
-  .tagline { color: var(--muted); font-size: 11px; margin-top: 4px; max-width: 150mm; }
+  .tagline { color: var(--muted); font-size: 11px; margin-top: 4px; max-width: 182mm; }
   .contact { margin-top: 8px; font-size: 9.6px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 4px 14px; }
   .contact span { white-space: nowrap; }
   .contact a { color: var(--accent); text-decoration: none; }
