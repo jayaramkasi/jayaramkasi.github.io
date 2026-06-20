@@ -160,6 +160,7 @@ export const experience = [
       "Led an engineering team of 10 to build the fulfilment deployment tech and customer portal.",
       "Integrated multiple client-facing Order management systems (OMS) and a third party transport management system (TMS) - through their APIs and event driven approaches",
       "Enabled strategic analysis and decision making for the business through data platforms and dashboards - built with BigQuery and Apache Superset",
+      "Designed and built optimisation algorithms for last mile delivery - including route planning and order stacking",
       "Exited to a strategic player in 2024",
     ],
   },
@@ -247,7 +248,7 @@ export const certifications = [
   {
     title: "Databricks Fundamentals",
     issuer: "Databricks",
-    period: "2025",
+    period: "2026",
     badge: "/databricks-fundamentals.png",
     credentialUrl:
       "https://credentials.databricks.com/20f5da65-130a-4b3f-bb1f-de3b27784a38#acc.vfXxVJRq",
