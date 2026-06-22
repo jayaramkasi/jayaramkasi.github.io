@@ -319,7 +319,7 @@ ${renderCommunity()}
 // --- main -------------------------------------------------------------------
 
 const htmlPath = join(__dirname, "cv.html");
-const pdfPath = join(__dirname, "cv.pdf");
+const pdfPath = join(__dirname, "Resume of Jayaram Kasi Visweswaran.pdf");
 
 writeFileSync(htmlPath, buildHtml());
 console.log(`✓ Wrote ${htmlPath}`);

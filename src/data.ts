@@ -133,7 +133,7 @@ export const projects = [
     category: "Engineering",
     description:
       "Designed, built, and scaled 20+ production systems for clients in sports, mortgage, e-commerce, insurance, and logistics — from greenfield builds to legacy integrations, owned end to end.",
-    tags: ["Python", "GoLang", "AWS", "GCP", "Javascript", "ReactJS"],
+    tags: ["Python", "GoLang", "AWS", "GCP", "Javascript", "ReactJS", "NodeJS"],
   },
   {
     title: "Internal data platforms and pipelines",
@@ -147,7 +147,15 @@ export const projects = [
     category: "Analytics & Insights",
     description:
       "Built dashboards and analytics solutions for business teams across multiple companies, enabling data-driven decision making and growth measurement, using both BI tools and self-defined javascript libraries built with D3js.",
-    tags: ["Javascript", "D3js", "Looker"],
+    tags: [
+      "Javascript",
+      "D3js",
+      "Looker",
+      "NodeJS",
+      "Tableau",
+      "PowerBI",
+      "Microstrategy",
+    ],
   },
 ];
 
