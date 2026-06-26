@@ -11,6 +11,7 @@ const navItems = [
   { to: "/education", label: "Education" },
   { to: "/featured-work", label: "Featured work" },
   { to: "/community", label: "Community" },
+  { to: "/gallery", label: "Gallery" },
 ];
 
 function Sidebar() {

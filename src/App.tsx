@@ -5,6 +5,7 @@ import Experience from "~/pages/Experience";
 import Expertise from "~/pages/Expertise";
 import Education from "~/pages/Education";
 import FeaturedWork from "~/pages/FeaturedWork";
+import Gallery from "~/pages/Gallery";
 import Community from "~/pages/Community";
 import NotFound from "~/pages/NotFound";
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="education" element={<Education />} />
         <Route path="featured-work" element={<FeaturedWork />} />
         <Route path="community" element={<Community />} />
+        <Route path="gallery" element={<Gallery />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
