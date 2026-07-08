@@ -191,7 +191,7 @@ export const experience = [
   {
     company: "Pikkol",
     role: "Co-Founder and Head of Data and Engineering",
-    period: "2014 — 2022",
+    period: "2015 — 2022",
     summary:
       "Pikkol is a relocation services startup, providing end to end services for individuals and corporates, powered by a technology platform.",
     achievements: [
