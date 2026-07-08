@@ -15,3 +15,9 @@ dist
 
 cv/cv.html
 cv/Resume of Jayaram Kasi Visweswaran.pdf
+
+# Playwright
+test-results
+playwright-report
+blob-report
+playwright/.cache
